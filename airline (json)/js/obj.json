@@ -1,0 +1,24 @@
+{
+  "airlines": [
+    {
+      "id": "aindia",
+      "airline": "Air India"
+    },
+    {
+      "id": "spicejet",
+      "airline": "SpiceJet"
+    },
+    {
+      "id": "airasia",
+      "airline": "AirAsia India"
+    },
+    {
+      "id": "india",
+      "airline": "IndiaGo"
+    },
+    {
+      "id": "first",
+      "airline": "Go First"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+   <!-- Popper JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+        .error{
+                color: red;
+        }
+</style>
+<body>
+     <div class="col-sm-4 mx-auto ">
+            <h2> Validation Form</h2>
+                <form  method="POST" id="form1" action="next.html">
+                    <div class="form-group">
+                          <label>Username:</label>
+                            <input type="text" name="fname" id="fname" class="form-control">
+                            
+                    </div>
+                    <div class="form-group">
+                            <label>LastName:</label>
+                            <input type="text" name="lname" id="lname" class="form-control">
+                           
+                    </div>
+                    <div class="form-group">
+                            <label>Contact-Number</label>
+                            <input type="text" name="mobile" maxlength="10" id="mobile" class="form-control">
+                           
+                    </div>
+                    <div class="form-group">
+                            <label>E-Mail</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                           
+                    </div>
+                    <label>Gender:</label>
+                    <div class="form-group" >
+                             
+                            <input type="radio" name="gen" value="male" id="gen">  Male
+                            <input type="radio" name="gen" value="female" id="gen">  Female
+                            <br>
+                            <label for="gen" style="display: none;" class="error"> </label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Marital Status:</label>
+                        <input type="radio" onclick="yesnoCheck();" name="yesno" value="Married" id="yesCheck"/>Married
+                        <input type="radio" onclick="yesnoCheck();" name="yesno" value="single" id="noCheck"/>Single
+                                <div id="ifYes" style="visibility:hidden">
+                                    <br><label>Spouse Name:</label>
+                                    <input type='text' id="sname" name="sname" autocomplete="off"/>
+                                </div>
+                    <label>Message:</label>
+                    <div class="form-group">
+                            
+                            <textarea id="msg" name="msg"></textarea>
+                    </div>
+                    <div class="form-group">
+                            <input type="submit" value="Submit" id="btn" class="btn btn-info btn-block">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+        <script src="js/valid.js"></script>
+        
+    </body>
+</html>

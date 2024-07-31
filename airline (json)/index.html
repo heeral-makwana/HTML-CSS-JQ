@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/vendor/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <title>json</title>
+</head>
+
+<body>
+  <div class="col-sm-4">
+    <form id="form1">
+      <h2>Airline Form</h2>
+      <div class="form-group">
+              <label>Airlines:</label>
+            <select name="airline" id="airline" class="form-control validate[required]">
+          <option disabled selected value>Select</option>
+        </select>
+        <p id="msg"></p>
+      </div>
+      <div class="form-group">
+        <label> Booking Date:</label>
+        <input type="date" name="date" class="form-control validate[required]" id="date">
+      </div>
+      <div class="form-group">
+              <label>Country:</label>
+            <select name="country" id="country" class="form-control validate[required]">
+          <option disabled selected value>Select</option>
+                  <option value="1">India</option>
+                  <option value="2">USA</option>
+                  <option value="3">Japan</option>
+                  <option value="4">China</option>
+        </select>
+      </div>
+      <div class="form-group">
+              <label>City:</label>
+            <select name="city" id="city" class="form-control validate[required]">
+          <option disabled selected value>Select</option>
+                  <option value="1">Chennai</option>
+                  <option value="2">Pune</option>
+                  <option value="3">Noida</option>
+                  <option value="4">Mumbai</option>
+        </select>
+      </div>
+      <label>Price:</label>
+      <div class="form-group">
+        <input type="text" class="form-control validate[required]" name="price" id="price">
+      </div>
+      <div>
+        <input type="submit" class="btn btn-success submitButton" disable="false" id="save">
+      </div>
+  </div>
+  </form>
+  <div class="container" style="display: none;">
+    <div class="row" id="heading">
+      <div class="col  border 1 ">Airlines</div>
+      <div class="col  border 1 ">Date</div>
+      <div class="col  border 1">Country</div>
+      <div class="col  border 1">City</div>
+      <div class="col  border 1">Price</div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/vendor/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./js/vendor/jquery.validationEngine-en.js"></script>
+  <script type="text/javascript" src="./js/vendor/jquery.validationEngine.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>

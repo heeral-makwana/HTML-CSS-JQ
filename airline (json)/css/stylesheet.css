@@ -1,0 +1,23 @@
+html,body {
+    overflow-x: hidden; 
+}
+.column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+   
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column1 {
+    float: left;
+    width: 60%;
+    padding: 10px;
+   
+}
+
+
+
